@@ -1,0 +1,164 @@
+
+.MuiPaper-root {
+    overflow-y: hidden!important;
+    background: $color__gray!important;
+    border-radius: 5px!important;
+}
+
+.MuiDialog-paperScrollPaper {
+    max-height: max-content!important;
+}
+
+.MuiButton-text {
+    color: white!important;
+    font-size: 2rem!important;
+    margin-top: 5px!important;
+}
+
+
+.modal {
+    &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1 1 auto;
+    padding: 1rem;
+
+        h1 {
+            font-size: 2rem;
+        }
+
+        &__sub {
+            padding: 1rem;
+            margin-top: -3rem;
+            h1 {
+                font-size: 2rem;
+            }
+        }
+
+    }
+
+    &__body {
+        flex: 1 1 auto;
+        padding: 1rem;
+        padding-top: 0.25em;
+    }
+
+    &__formGroup {
+        margin-bottom: .2rem;
+        display: flex;
+        flex-direction: column;
+
+        label {
+            font-size: 1.2rem;
+            line-height: 1.5rem;
+        }
+
+       input { 
+            padding: .5rem;
+            border-radius: 5px;
+            background-color: white;
+            border: 1px solid transparent;
+       }
+
+       textarea {
+            border-radius: 5px;
+            border: 1px solid transparent;
+       }
+    }
+
+
+    &__submit {
+        background: $color__primary;
+        border-radius: 5px;
+        color: white;
+        cursor: pointer;
+        border: 1px solid transparent;
+        margin-top: .8rem;
+        padding: 0.8rem 2rem;
+        line-height: 1.5;
+    }
+
+
+
+&__area {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 2.5em 1.5em 1.5em 1.5em;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+@media screen and (min-width: 500px) {
+  /* Center the Modal! */
+  .modal-area {
+    left: 50%;
+    top: 50%;
+    height: auto;
+    transform: translate(-50%, -50%);
+    max-width: 30em;
+    max-height: calc(100% - 1em);
+  }
+}
+
+
+}
+
+
+
+.modal-cover {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  transform: translateZ(0);
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+
+._modal-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0.5em;
+  line-height: 1;
+  background: #f6f6f7;
+  border: 0;
+  box-shadow: 0;
+  cursor: pointer;
+}
+
+._modal-close-icon {
+  width: 25px;
+  height: 25px;
+  fill: transparent;
+  stroke: black;
+  stroke-linecap: round;
+  stroke-width: 2;
+}
+
+
+._hide-visual {
+  border: 0 !important;
+  clip: rect(0 0 0 0) !important;
+  height: 1px !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  position: absolute !important;
+  width: 1px !important;
+  white-space: nowrap !important;
+}
+
+.scroll-lock {
+  overflow: hidden;
+  margin-right: 17px;
+}

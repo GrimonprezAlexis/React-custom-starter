@@ -1,0 +1,67 @@
+// Les commentaires
+// "/* */" Présent à la sortie du CSS, "//" Pas compile (pas présent dans le CSS de sortie)
+
+/*--------------------------------------------------------------
+# Import
+--------------------------------------------------------------*/
+@import "./reset.scss"; //Reset CSS
+@import "./variables.scss"; //Variables
+@import "./modal.scss"; //Modal
+@import "./animations.scss"; //Animations
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+
+/*--------------------------------------------------------------
+# Legacy css
+--------------------------------------------------------------*/
+%bold_text {
+    font-weight: 900;
+    font-size: 1.4rem;
+}
+
+html {
+    height: 100%; 
+    scroll-behavior: smooth;
+}
+body {
+    height: 100%; 
+    user-select: none;          /* Likely future */    
+    -webkit-user-select: none;  /* Chrome all / Safari all */
+    -moz-user-select: none;     /* Firefox all */
+    -ms-user-select: none;      /* IE 10+ */
+    user-select: none;
+    font-family: $font-family;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1920px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding: 2rem 4rem;
+    align-items: center;
+
+    &__main {
+        display: flex;
+        flex-flow: row wrap;
+        padding-top: 3rem;
+        margin-left: -30px;
+        margin-right: -30px;
+    }
+}
+
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+input:focus, button:focus{
+    outline-color: $color__primary;
+}
